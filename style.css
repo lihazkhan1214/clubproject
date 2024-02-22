@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.padding-x{
+   padding-left: 50px;
+   padding-right: 50px;
+   
+}
+.flexContainer{
+    display: flex;
+    justify-content: space-between;
+}
