@@ -6,9 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- header section start -->
+
+    <section class="main_section">
+        <!-- golf ball image -->
+        <img class="golf_ball" src="./assets/images/golf-ball.png" alt="ball">
+        <!-- golf ball image -->
+        <div class="container">
+            <div class="main_header">
+                <div class="main_left">
+                    <h2>Play your game</h2>
+                    <h1>Play Games & Live Healthy Life</h1>
+                    <p>Our staff are always on hand to make all members feel
+                        welcome. Fully dedicated to golf lovers.</p>
+                    <div class="btns">
+                        <button class="btn_f">
+                            Join Our Club
+                        </button>
+                        <button>
+                            About Us
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="header_nav">
+                <nav class="navbar">
+                    <img class="nav_logo" src="./assets/images/mainlogo.png" alt="logo" >
+                    <ul class="flex text_primary ">
+                        <li>Home</li>
+                        <li>Facility</li>
+                        <li>Trainings</li>
+                    </ul>
+                    <div class="btns flex">
+                        <button class="flex text_primary">Sign In</button>
+                        <button class="flex text_primary sign_up">Sign Up</button>
+                    </div>
+                    <div class="hamburger">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="#000000" d="M2 17h20v-2H2v2zm0-5h20v-2H2v2zm0-7v2h20V5H2z"/>
+                          </svg>
+                    </div>
+                </nav>
+                <nav class="mob_navbar ">
+                    <ul class="flex text_primary ">
+                        <li>Home</li>
+                        <li>Facility</li>
+                        <li>Trainings</li>
+                    </ul>
+                    <div class="mob_btns">
+                        <button class="flex text_primary">Sign In</button>
+                        <button class="flex text_primary sign_up">Sign Up</button>
+                    </div>
+                    <div onclick="handleclick">
+                        <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
+                        <path fill="#ffffff" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                    </svg>
+                    </div>
+                    
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- header section end -->
 
 
     <!-- about us section Start -->
@@ -472,6 +543,100 @@
 
 
 
+    <!-- contact section starts here -->
+    <section class="container">
+        <div class="main_contact padding-x">
+            <div class="contact_form">
+                <h3>Join Club</h3>
+                <h2>Join our Club</h2>
+                <div class="inputs flex">
+                    <input type="text" placeholder="Your Name">
+                    <input type="number" placeholder="Your Phone">
+                </div>
+                <div class="inputs flex">
+                    <input type="email" placeholder="Your Email">
+                    <input type="text" placeholder="Website URL">
+                </div>
+                <textarea name="" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+                <button class="form_btn">Submit Now</button>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- contact section ends here -->
+
+<!-- Footer starts here -->
+<footer class="footer">
+    <section class="container">
+        <div class="main_footer">
+            <div class="f_first">
+                <img class="f_logo" src="./assets/images/splogo.png" alt="logo">
+                <p>Lorem Ipsum is simply dummy text
+                    of the printing and typesetting
+                    industry. Lorem Ipsum has been the
+                    industry...</p>
+                <div class="social ">
+
+                    <img class="social_icon" src="./assets/images/facebook.png" alt="facebook">
+                    <img class="social_icon" src="./assets/images/twitter.png" alt="twitter">
+                    <img class="social_icon" src="./assets/images/insta.png" alt="instagram">
+                    <img class="social_icon" src="./assets/images/linkedin.png" alt="linkedin">
+                </div>
+            </div>
+            <div class="f_second">
+                <h2>Quik links</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Facility</li>
+                    <li>Shop</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="f_second">
+                <h2>Address</h2>
+                <ul>
+                    <li>(480) 555-0103</li>
+                    <li>(406) 555-0120</li>
+                    <li>deanna.curtis@example.com
+                        debra.holt@example.com</li>
+                    <li>285 Great North Road, Grey Lynn,
+                        Auckland 1021</li>
+                </ul>
+            </div>
+            <div class="f_second">
+                <h2>Newslatter</h2>
+                <p>Subscribe our newsletter to get our
+                    latest update & news</p>
+                <div class="subscribe">
+                    <input type="email" placeholder="Your email address" >
+                    <button>C</button>
+
+                </div>
+            </div>
+
+        </div>
+        <hr class="hr">
+        <div class="footer_end">
+            <span>Copyright © 2024 Sports Life. All Rights Reserved</span>
+            <div class="f_links">
+                <li>Support</li>
+                <li>Terms of Use</li>
+                <li>Privacy Policy</li>
+            </div>
+
+        </div>
+
+    </section>
+</footer>
+<!-- Footer ends here -->
+
+
+    <!-- javascript -->
+
+    <script src="./training.js"></script>
+    <!-- javascript -->
 
 
 </body>
