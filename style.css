@@ -3,12 +3,200 @@
     padding: 0;
 }
 
+:root{
+    --gcolor:#0E7A31;
+    --wcolor:#FFF;
+}
 .padding-x{
    padding-left: 50px;
    padding-right: 50px;
    
 }
+/* aboutsection start */
+.aboutTitle{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--gcolor);
+    text-align: center;
+    margin-top: 20pxpx;
+}
 .flexContainer{
     display: flex;
+   
+    padding:20px 0px;
+    gap: 20px;
+}
+
+.aboutright{
+    flex: 1;
+}
+.aboutright img{
+    width: 100%;
+    height: 100%;
+  
+
+}
+.aboutleft{
+  
+    flex: 1;
+
+
+
+}
+
+.aboutheading{
+    color:#3F3F3F;
+    font-size: 60px;
+    font-weight: 900;
+}
+.aboutdescritpion{
+    font-size: 18px;
+    color: #3F3F3F;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.membercontainer{
+    margin-top: 20px;
+    display: flex;
+    gap: 5px
+    ;
+    align-items: center;
+}
+.memberTitle{
+    font-size: 24px;
+    color: #3F3F3F;
+}
+.membercontainer img{
+    height: 60px;
+    height: 60px;
+}
+.membercontainer p{
+    font-size: 14px;
+    color:#3F3F3F;
+
+}
+
+/* aboutsection end */
+
+
+/*club view start  */
+
+.viewSection{
+    background-color: #F3FBF5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.clubTitle{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--gcolor);
+  
+    margin-top: 20px;
+}
+
+
+.clubright{
+    flex: 1;
+}
+.clubright img{
+    width: 100%;
+    height: 100%;
+  
+
+}
+.aboutleft{
+  
+    flex: 1;
+
+
+
+}
+
+
+
+.viewCheckboxContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+   
+  }
+  
+  .viewCheckboxContainer label {
+    margin-right: 10px;
+    color:#3F3F3F;
+    font-size: 18px;
+    font-weight:500;
+  }
+  
+  .viewCheckboxContainer input[type="checkbox"] {
+    margin-right: 5px;
+    background: red;
+    
+  }
+
+.viewButtton{
+    background: var(--gcolor);
+    color: #FFF;
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 14px 20px;
+    font-size: 18;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+  
+  
+
+
+
+/*club view end */
+
+
+
+/* activity start */
+
+.activeContainer{
+    display: flex;
+    gap: 20px;
+    align-items: center;
     justify-content: space-between;
+    
+padding-top: 50px;
+padding-bottom: 50px;
+    
+    background: url('./assets/images/Section.png') center/cover;
+
+  
+
+}
+
+.activeContainer img{
+    width: 20%;
+    height: 100%;
+    
+  
+
+}
+/* active end */
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+
+.flexContainer{
+    flex-direction: column;
+}
+
+
+
 }
