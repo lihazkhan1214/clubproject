@@ -186,17 +186,220 @@ padding-bottom: 50px;
 /* active end */
 
 
+/*pricing start  */
+.pricingSection{
+    background-color: #FFF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+
+.pricingTitle{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--gcolor);
+    text-align: center;
+  
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.pricingheading{
+    color:#3F3F3F;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+
+
+}
+.pricingdescritpion{
+    font-size: 18px;
+    color: #3F3F3F;
+    font-weight: 500;
+    text-align: center;
+    line-height: 30px;
+    margin: 0px auto;
+    margin-top: 20px;
+    width: 70%;
+}
+.planesubtilte{
+    font-size: 30px;
+    font: 500;
+    text-align: center;
+    margin-top: 20px;
+    color: #3F3F3F;
+}
+
+.pricebuttonContainer{
+    border: 0.5px solid var(--gcolor);
+    margin: 0 auto;
+    width: 320px;
+    margin-top: 20px;
+    display: flex;
+    /* padding: 10px 14px; */
+   
+    cursor: pointer;
+
+}
+.pricebuttonContainer span{
+    width: 50%;
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--gcolor);
+}
+
+.priceCard{
+    border: 1px solid var(--gcolor);
+    padding:40px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+.priceCard .priceButton{
+    width: 120px;
+   padding: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    border: 1px solid var(--gcolor);
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 8px;
+    background: #FFF;
+
+}
+
+
+.priceCard .pricetitle{
+    font-size: 70px;
+    font-weight: bold;
+    color: var(--gcolor);
+
+
+}
+.priceCard .pricelist img{
+    width: 30px;
+    height: 30px;
+}
+.priceCard .pricelist{
+    margin-top: 12px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.priceCard .pricelist p{
+   font-size: 16px;
+   color: #3F3F3F;
+}
+.priceCard .pricelist p del{
+    color: #034F75;
+}
+
+
+/* green card */
+
+
+
+
+
+
+
+
+
+.GpriceCard{
+    border: 1px solid var(--gcolor);
+    padding:40px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+.GpriceCard .priceButton{
+    width: 120px;
+   padding: 12px;
+    border: 1px solid var(--gcolor);
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 8px;
+    background: #FFF;
+
+}
+
+
+.GpriceCard .pricetitle{
+    font-size: 70px;
+    font-weight: bold;
+    color: var(--wcolor);
+
+
+}
+.GpriceCard .pricelist img{
+    width: 30px;
+    height: 30px;
+}
+.GpriceCard .pricelist{
+    margin-top: 12px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.GpriceCard .pricelist p{
+   font-size: 16px;
+   color: #FFF;
+}
+.GpriceCard .pricelist p del{
+    color: #FFF;
+}
+
+/* pricing end */
 
 
 
 
 @media screen and (max-width: 1000px) {
 
+    .padding-x{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 
 .flexContainer{
     flex-direction: column;
 }
+.GpriceCard{
+    width: 95%;
+}
+.priceCard{
+    width: 95%;
+}
+
+.aboutheading{
+    color:#3F3F3F;
+    font-size: 30px;
+    font-weight: 600;}
 
 
+    .pricingheading,
+.pricingheading{
+ 
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.pricingdescritpion{
+   
+    width: 100%;
+}
 
 }
