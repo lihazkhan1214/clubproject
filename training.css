@@ -29,6 +29,9 @@
     width: 100%;
     height: 339px;
     background-image: url('./assets/images/navbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     position: relative;
 }
 .navbar{
@@ -37,6 +40,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 64px;
+}
+.navbar .nav_logo{
+    width: 264px;
     height: 64px;
 }
 .navbar ul{
@@ -80,6 +87,67 @@
     position: absolute;
     bottom: -20px;
     left: 50%;
+}
+
+.hamburger{
+    display: none;
+    font-size: 24px;
+}
+
+.mob_navbar{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    width: 60%;
+    top: 0px;
+    right: 0px;
+    background-color: #0e7a30fb;
+    height: 100vh;
+    padding: 20px;
+}
+.mob_navbar ul{
+    list-style: none;
+    gap: 8px;
+    flex-direction: column;
+    width: 100%;
+}
+.mob_navbar ul li{
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+
+    padding: 12px;
+    border-radius: 5px;
+}
+.mob_navbar ul li:hover{
+    background-color: #1ebb52;
+}
+.mob_navbar .mob_btns button{
+    width: 126px;
+    height: 56px;
+    background-color: transparent;
+    border: 1px solid #CECECE;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.mob_navbar .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.active{
+    display: flex;
+    text-align: center;
 }
 /* header ends here */
 
@@ -237,3 +305,163 @@
     background-color: #0E7A31;
 }
 /* contact section ends here */
+
+/* footer section start here */
+.footer{
+    width: 100%;
+    padding: 30px 0px;
+    background-color: #05441A;
+}
+
+.main_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.main_footer p{
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 30px;
+}
+.main_footer .f_first{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+.main_footer .f_first .f_logo{
+    width: 200px;
+    height: 50px;
+}
+.social{
+    gap: 10px;
+    display: flex;
+}
+.social .social_icon{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.main_footer .f_second{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #FFFFFF;
+    width: 200px;
+}
+.main_footer .f_second h2{
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 1px;
+}
+.main_footer .f_second ul{
+    list-style: none;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+.main_footer .f_second ul li{
+    list-style: none;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+.main_footer .f_second .subscribe{
+    display: flex;
+    border: 1px solid white;
+    height: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.main_footer .f_second .subscribe input{
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    flex-grow: 3;
+    padding-left: 10px;
+    background-color: transparent;
+
+}
+.main_footer .f_second .subscribe button{
+    flex-grow: 1;
+    border: none;
+    background-color: #FFFFFF;
+    color: #0CA940;
+    font-size: 18px;
+    padding: 3px 8px;
+    cursor: pointer;
+}
+.footer .container .hr{
+    margin-top: 20px;
+}
+.footer_end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap-reverse;
+}
+.footer_end span{
+    color: #FFFFFF;
+}
+.footer_end .f_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.footer_end .f_links li{
+    list-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+/* footer section ends here */
+
+
+
+
+
+
+
+
+
+/* media queries for responsiveness */
+
+@media only screen and (max-width: 960px) {
+    /* navbar */
+    .navbar .nav_logo{
+        width: 200px;
+        height: 50px;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .navbar ul, .navbar .btns {
+        display: none;
+    }
+    .main_footer{
+        font-size: 14px !important;
+    }
+    .footer_end span{
+        font-size: 14px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .footer_end .f_links li{
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 740px) {
+    .main_contact .contact_form{
+        width: 100%;
+        margin-right: 0px;
+    }
+}
